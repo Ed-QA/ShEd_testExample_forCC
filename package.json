@@ -1,0 +1,29 @@
+{
+  "name": "shed-testexample-forcc",
+  "version": "1.0.0",
+  "description": "Playwright TypeScript QA automation example for Practice Software Testing.",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:chrome": "playwright test --project=chromium-deep",
+    "test:headed": "playwright test --project=chromium-deep --headed",
+    "test:ui": "playwright test --ui",
+    "test:smoke": "playwright test --project=chromium-smoke --project=edge-smoke --project=firefox-smoke --project=webkit-smoke",
+    "test:responsive": "playwright test --project=mobile-chrome --project=tablet-safari",
+    "test:intentional-fails": "playwright test tests/intentional-fails --project=chromium-deep --reporter=list",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "qa",
+    "automation",
+    "page-object-model"
+  ],
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.0",
+    "typescript": "^5.9.3"
+  }
+}
