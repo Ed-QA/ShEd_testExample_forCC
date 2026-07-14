@@ -1,8 +1,8 @@
-# ShEd Test Example for Canopy QA
+# ShEdQA Test Example for CC
 
 Playwright + TypeScript QA automation example for the public Practice Software Testing application.
 
-The project is intentionally structured as a QA portfolio sample: page models, API-assisted checks, a coverage matrix, resilient failure evidence, headed mode, parallel execution, and a lighter cross-browser/responsive smoke layer.
+The project is structured as a QA portfolio sample: page models, API checks, a coverage matrix, headed mode, parallel execution, Playwright reporting, and cross-browser/responsive smoke coverage.
 
 ## Possible Future Improvements
 
@@ -32,6 +32,7 @@ The project is intentionally structured as a QA portfolio sample: page models, A
 
 ## Run
 
+```powershell
 npm test
 npm run test:chrome
 npm run test:headed
@@ -39,7 +40,7 @@ npm run test:smoke
 npm run test:responsive
 npm run test:intentional-fails
 npm run report
-
+```
 
 `tests/intentional-fails` is included in the normal full run on purpose. It intentionally fails three tests to demonstrate that Playwright continues running the rest of the suite and saves readable failure messages, screenshots, traces, videos, and error context. Use the focused scripts such as `test:chrome`, `test:smoke`, or `test:responsive` when you want only the passing functional/smoke layers.
 
@@ -54,6 +55,5 @@ Failures are visible in the Playwright HTML report. The configuration keeps:
 - videos on failure
 - JSON result output
 - step-by-step HTML report
-
 
 

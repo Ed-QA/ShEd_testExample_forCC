@@ -13,7 +13,7 @@ test.describe('Intentional test fails', () => {
   test('wrong text: expects an incorrect product name on the home page', async ({ page }) => {
     await page.goto('/');
 
-    await expect(page.getByTestId('product-name').first()).toHaveText('Canopy Oncology QA Tool');
+    await expect(page.getByTestId('product-name').first()).toHaveText('CC QA Demo Tool');
   });
 
   test('absent element: expects a fake support escalation banner', async ({ page }) => {
