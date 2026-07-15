@@ -1,8 +1,6 @@
-# ShEdQA Test Example for CC
+# ShEdSQA Automation test example
 
-Playwright + TypeScript QA automation example for the public Practice Software Testing application.
-
-The project is structured as a QA portfolio sample: page models, API checks, a coverage matrix, headed mode, parallel execution, Playwright reporting, and cross-browser/responsive smoke coverage.
+Playwright + TypeScript QA automation example. The project is structured as a SQA portfolio sample: page models, API checks, a coverage matrix, parallel execution, cross-browser/responsive smoke coverage, Playwright report.
 
 ## Possible Future Improvements
 
@@ -55,5 +53,4 @@ Failures are visible in the Playwright HTML report. The configuration keeps:
 - videos on failure
 - JSON result output
 - step-by-step HTML report
-
 
